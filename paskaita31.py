@@ -99,14 +99,71 @@ print("___________________")
 
 for y in range(1,11):
     for x in range(1,11):
-        print(y*x, end=" ")
-    print()
+        print(y*x, end=" ") # end=" " - suraso i viena eilute rezultata
+    print()  # "print()" - kai interacija baigiasi, meta nauja iteracija i nauja eilute
 print("paslepta zinute")
 
+print("_______uzd 1___---------------_____")
+print(" ")
+# Sukurkite ciklą kuris atspausdintų 10 kartų žodį “labas”.
+
+for i in range(10):
+    print("labas")
+
+print(" ")
+print("___________________")
+
+print("_______uzd 2___---------------_____")
+print(" ")
+# Sukurkite ciklą kuris atspausdintų skaičius nuo 0 iki 9..
+
+for i in range(0,9):
+    print(i)
+
+print(" ")
+print("___________________")
+
+
+print("_______uzd 3_____---------------___")
+print(" ")
+# Sukurkite masyvą iš dešimties augalų pavadinimų.
+
+augalai = ["roze", "saulegraza", "lelija", "azuolas", "berzas", "meta", "dilgele", "tulpe", "kaktusas", "ramune"]
+
+print(" ")
+print("___________________")
+
+
+print("_______uzd 4_____---------------___")
+print(" ")
+# Atspausdinkite kiekvieną 3čio uždavinio augalą atskiroje eilutėje.
+
+augalai = ["roze", "saulegraza", "lelija", "azuolas", "berzas", "meta", "dilgele", "tulpe", "kaktusas", "ramune"]
+for aug in augalai:
+    print(aug)
+
+print(" ")
+print("___________________")
+
+
+print("_______uzd 5_____---------------___")
+print(" ")
+# Atspausdinkite 3čio uždavinio kiekvieną augalą pradedant nuo paskutinio, ir baigiant pirmuoju. (atvirkščias ciklas).
+
+augalai = ["roze", "saulegraza", "lelija", "azuolas", "berzas", "meta", "dilgele", "tulpe", "kaktusas", "ramune"]
+for aug in reversed(augalai):
+    print(aug, end=" ")
+
+
+print(" ")
+print("___________________")
+
+
+print("_______uzd 6_____---------------___")
+print(" ")
+# Atspausdinkite kas antrą skaičių nuo 10 iki 50 (porinius);
 
 
 
-
-
-
-
+print(" ")
+print("___________________")
