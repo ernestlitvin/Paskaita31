@@ -93,6 +93,6 @@ while not is_not_even:
     print(rnd_num)
 
 
-
+print("test msg")
 
 
