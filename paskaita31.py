@@ -298,6 +298,32 @@ print("_______uzd 15_____---------------___")
 
 
 
+count = 0
+while True:
+    moneta = random.randint(0, 1)
+
+    if moneta == 0:
+        count += 1
+        print("H")
+        if count == 3:
+            break
+    else:
+        print("S")
+        count = 0
+
+print()
+print("_______uzd 16_____---------------___")
+
+
+
+
+# while True:
+#     rnd_num = random.randint(1,10)
+#     print(rnd_num)
+#     if rnd_num == 1:
+#         break
+
+
 
 
 
