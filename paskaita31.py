@@ -312,18 +312,109 @@ while True:
         count = 0
 
 print()
-print("_______uzd 16_____---------------___")
+print("_______uzd 16_____---- PALIKAU VELIAU ??Ą?Ą??Ą?Ą??Ą?Ą?Ą? -----------___")
 
 
+print()
+print("_______uzd 1_____---- 06.17 -----------___")
+
+# Sugeneruokite masyvą iš 30 elementų (indeksai nuo 0 iki 29), kurių reikšmės yra atsitiktiniai skaičiai nuo 5 iki 25.
+
+skaiciai = []
+
+for _ in range(30):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+print((skaiciai), end=" ")
+
+print()
+print("____UZD 2.a---")
+
+# Naudodamiesi 1 uždavinio masyvu:
+# Suskaičiuokite kiek masyve yra reikšmių didesnių už 10;
 
 
-# while True:
-#     rnd_num = random.randint(1,10)
-#     print(rnd_num)
-#     if rnd_num == 1:
-#         break
+skaiciai = []
+count = 0
+
+for _ in range(30):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+    if skaicius > 10:
+        count += 1
+
+print((skaiciai), end=" ")
+print()
+print("Kiek reiksmiu > 10 - ", count)
+
+print()
+print("____UZD 2.b---")
+
+# Raskite didžiausią masyvo reikšmę;
+
+skaiciai = []
+
+for _ in range(30):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+
+print((skaiciai), end=" ")
+print()
+print("Max number - ", str(max(skaiciai)))
+
+print()
+print("____UZD 2.с---")
+
+# Suskaičiuokite visų reikšmių sumą;
+
+skaiciai = []
+
+for _ in range(30):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+
+print((skaiciai), end=" ")
+print()
+print("Skaiciu suma - ", sum(skaiciai))
+print()
+
+print()
+print("____UZD 2.d---")
+
+# Sukurkite naują masyvą, kurio reikšmės yra 1 uždavinio masyvo reikšmes minus tos reikšmės indeksas;
+
+naujas = []
+skaiciai = []
+
+for _ in range(30):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+for index, value in enumerate(skaiciai):
+    print("INDEX:", index, "REIKS:", value)
+    naujas.append(value-index)
+
+print((skaiciai), end=" ")
+print((naujas), end=" ")
+
+print()
+print("____UZD 2.e---")
+# Papildykite masyvą papildomais 10 elementų su reikšmėmis nuo 5 iki 25, kad bendras masyvas padidėtų iki indekso 39;
 
 
+skaiciai = []
+
+
+for _ in range(30):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+
+for _ in range(10):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+
+print((skaiciai), end=" ")
+print()
+print("Skaiciu kiekis -",len(skaiciai))
 
 
 
