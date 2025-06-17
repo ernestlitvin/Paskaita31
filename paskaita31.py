@@ -32,9 +32,7 @@ for zaidimas in games:
 
 
 
-# 6 uzdavinis
-# i % 2 == 0 - porinis (mano skaicius dalintas is 2, jeigu yra lygus 0 - skaicius porinis
-# i % 2 != 0  (jeigu nelygus 0 - neporinis)
+
 
 count = 0
 for i in range(50):
@@ -163,7 +161,83 @@ print("_______uzd 6_____---------------___")
 print(" ")
 # Atspausdinkite kas antrą skaičių nuo 10 iki 50 (porinius);
 
+# 6 uzdavinis
+# i % 2 == 0 - porinis (mano skaicius dalintas is 2, jeigu yra lygus 0 - skaicius porinis
+# i % 2 != 0  (jeigu nelygus 0 - neporinis)
+
+for i in range(10,50,2):
+    print ((i), end=" ")
+print()
+
+print(" ")
+print("___________________")
+
+print("_______uzd 7_____---------------___")
+print(" ")
+# Atspausdinkite kas antrą skaičių nuo 10 iki 50. (porinius) Jei skaičius dalinasi iš 10 be liekanos jo nespausdinkite.
+# ( naudokite continue.) (atspausdinti visus porinus skaičius, išskyrus tuos kurie dalinasi iš 10 be liekanos)
+
+for i in range(10,50):
+    if i % 2 != 0:
+        continue
+    elif i % 10 == 0:
+        continue
+    print ((i), end=" ")
+print()
+
+
+
+print("_______uzd 8_____---------------___")
+print(" ")
+
+# Sukurkite ciklą kuris suktųsi nuo 0 iki 20. Suskaičiuokite, kiek kartų kintamasis i turėjo porinę reikšmę;
+# "0" reiksme !!!!!!???????
+
+count = 0
+for i in range(0,20):
+    if i % 2 != 0:
+        continue
+    print((i), end= " ")
+    count += 1
+print()
+print("Kiekis poriniu reiksmiu ", count)
 
 
 print(" ")
 print("___________________")
+
+print("_______uzd 9_____---------------___")
+print(" ")
+
+# Suskaičiuokite kiek 3čio uždavinio masyve yra žodžių trumpesnių nei 5 simboliai,
+# ir kiek ilgesnių nei 7 simboliai. (du skaičiavimai)
+
+augalai = ["roze", "saulegraza", "lelija", "azuolas", "berzas", "meta", "dilgele", "tulpe", "kaktusas", "ramune"]
+
+print(augalai)
+print(len(augalai))
+
+
+for aug in augalai:
+    if len(aug) < 5:
+        print(aug)
+
+for aug in augalai:
+    if len(aug) > 7:
+        print(aug)
+
+# while ?
+
+
+print(" ")
+print("___________________")
+
+
+
+
+
+
+
+
+
+
