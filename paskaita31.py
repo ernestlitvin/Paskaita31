@@ -275,9 +275,25 @@ print(", ".join(str(x) for x in results))
 
 
 print()
-print("_______uzd 13_____---------------___")
+print("_______uzd 13-14_____---------------___")
 # Nupieškite kvadratą iš “*”, kurio kraštines sudaro 25“*”.
 
+for x in range(25):
+    for y in range(25):
+        if x == y or x + y == 24:
+            print("#", end=" ")
+        else:
+            print("*", end=" ")
+    print()
+
+print()
+print("_______uzd 15_____---------------___")
+# Metam monetą. Monetos kritimo rezultatą imituojam random.randint(x,x) funkcija, kur 0 yra herbas, o 1 - skaičius.
+# Monetos metimo rezultatus išvedame į ekraną atskiroje eilutėje: “S” jeigu iškrito skaičius ir “H” jeigu herbas.
+# Suprogramuokite tris skirtingus scenarijus kai monetos metimą stabdome:
+# Iškritus herbui;
+# Tris kartus iškritus herbui;
+# Tris kartus iš eilės iškritus herbui;
 
 
 
@@ -285,8 +301,7 @@ print("_______uzd 13_____---------------___")
 
 
 
-
-print(" ")
+print("---------------------")
 
 
 
