@@ -165,7 +165,7 @@ print(" ")
 # i % 2 == 0 - porinis (mano skaicius dalintas is 2, jeigu yra lygus 0 - skaicius porinis
 # i % 2 != 0  (jeigu nelygus 0 - neporinis)
 
-for i in range(10,50,2):
+for i in range(10,51,2):
     print ((i), end=" ")
 print()
 
@@ -177,10 +177,8 @@ print(" ")
 # Atspausdinkite kas antrą skaičių nuo 10 iki 50. (porinius) Jei skaičius dalinasi iš 10 be liekanos jo nespausdinkite.
 # ( naudokite continue.) (atspausdinti visus porinus skaičius, išskyrus tuos kurie dalinasi iš 10 be liekanos)
 
-for i in range(10,50):
-    if i % 2 != 0:
-        continue
-    elif i % 10 == 0:
+for i in range(10,51,2):
+    if i % 10 == 0:
         continue
     print ((i), end=" ")
 print()
@@ -191,14 +189,13 @@ print("_______uzd 8_____---------------___")
 print(" ")
 
 # Sukurkite ciklą kuris suktųsi nuo 0 iki 20. Suskaičiuokite, kiek kartų kintamasis i turėjo porinę reikšmę;
-# "0" reiksme !!!!!!???????
+
 
 count = 0
-for i in range(0,20):
-    if i % 2 != 0:
-        continue
-    print((i), end= " ")
-    count += 1
+for i in range(21):
+    if i % 2 == 0:
+        count += 1
+        print((i), end=" ")
 print()
 print("Kiekis poriniu reiksmiu ", count)
 
@@ -214,26 +211,72 @@ print(" ")
 
 augalai = ["roze", "saulegraza", "lelija", "azuolas", "berzas", "meta", "dilgele", "tulpe", "kaktusas", "ramune"]
 
-print(augalai)
-print(len(augalai))
+trumpi = 0
+ilgi = 0
 
+for augalas in augalai:
+    if len(augalas) < 5:
+        trumpi += 1
+    if len(augalas) > 7:
+        ilgi += 1
 
-for aug in augalai:
-    if len(aug) < 5:
-        print(aug)
+print("Zodziai trumpesni nei 5 simboliai - ", ilgi)
+print("Zodziai ilgesni nei 7 simboliai - ", ilgi)
 
-for aug in augalai:
-    if len(aug) > 7:
-        print(aug)
-
-# while ?
-
-
+print("_______uzd 10_____---------------___")
 print(" ")
-print("___________________")
+# Suskaičiuokite kiek 3čio uždavinio masyve yra žodžių ilgesnių nei 5 simboliai bet trumpesnių  nei 10 simboliai.
+# (tarp 5 ir 10 simbolių ilgio)
+
+augalai = ["roze", "saulegraza", "lelija", "azuolas", "berzas", "meta", "dilgele", "tulpe", "kaktusas", "ramune"]
+count = 0
+
+for aug in augalai:
+    if len(aug) > 5 and len(aug) < 10:
+        count += 1
+print(count)
+
+print("_______uzd 10_____---------------___")
+print(" ")
+# Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos atskirtus tarpais
+# ir suskaičiuokite kiek tarp jų yra didesnių už 150.
+# Skaičiai didesni nei 275 turi būti atspausdinti skliausteliuose” [ ] “.
+
+rnd_num = random.randint(0,300)
+print(rnd_num, end=" ")
+
+for i in random.randint(1,300):
+print((i), end=" ")
 
 
 
+
+
+
+
+
+
+
+#
+# print(" ")
+# print("___________________")
+#
+#
+# grades = [
+#     [1,2,3,4,4,5] #math
+#     [4,5,6] # lt
+#     [5,8,10] # tikyba
+#     [4,8,8,10] #anglu
+#     [7,5,3,4] #fizika
+#     [10,4,10] #PE
+#
+# sum = 0
+# count = 0
+#
+# for lesson in grades:
+#
+#
+# ]
 
 
 
