@@ -544,7 +544,7 @@ print("____UZD 5---")
 # (turi gautis masyvas, kurio elementai, kaip pvz atrodo taip: “AAB”, “CBC”, “DDA”, 200 reikšmių).
 # Paskaičiuokite kiek skirtingų reikšmių kombinacijų gavote.
 
-
+saddd
 
 
 
