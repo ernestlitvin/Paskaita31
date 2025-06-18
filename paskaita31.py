@@ -416,6 +416,138 @@ print((skaiciai), end=" ")
 print()
 print("Skaiciu kiekis -",len(skaiciai))
 
+print()
+print("____UZD 2.f---")
+# Iš masyvo elementų sukurkite du naujus masyvus.
+# Vienas turi būti sudarytas iš neporinių indekso reikšmių, o kitas iš porinių;
+
+skaiciai = []
+poriniai = []
+neporiniai = []
+
+for _ in range(30):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+
+for _ in range(10):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+
+for index, value in enumerate(skaiciai):
+    if index % 2 == 0:
+        poriniai.append(value)
+    else:
+        neporiniai.append(value)
+
+print("Poriniai indeksai:", poriniai)
+print("Neporiniai indeksai:", neporiniai)
+
+print((skaiciai), end=" ")
+print()
+
+print()
+print("____UZD 2.g---")
+# Masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu jie didesni už 15;
+
+skaiciai = []
+
+
+for _ in range(30):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+
+for _ in range(10):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+
+originalus = skaiciai.copy()
+
+for index, value in enumerate(skaiciai):
+    if index % 2 == 0 and value > 15:
+        skaiciai[index] = 0
+
+
+print("Originalus:", originalus)
+print("Pakeistas sąrašas: ", skaiciai)
+
+print()
+
+print()
+print("____UZD 2.h---")
+# Suraskite pirmą (mažiausią) indeksą, kurio elemento reikšmė didesnė už 10;
+
+skaiciai = []
+
+for _ in range(30):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+
+for _ in range(10):
+    skaicius = random.randint(5, 25)
+    skaiciai.append(skaicius)
+
+for index, value in enumerate(skaiciai):
+    if value > 10:
+        print("Indeksas", index)
+        print("Reiksme", value)
+        break
+print("Skaiciu sarasas", skaiciai)
+
+
+print()
+print("____UZD 3-4---")
+# Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 200.
+# Suskaičiuokite kiek yra kiekvienos raidės.
++
+# Išrūšiuokite 3 uždavinio masyvą pagal abecėlę.
+
+
+
+raides = []
+countA = 0
+countB = 0
+countC = 0
+countD = 0
+
+for _ in range(200):
+    letter = random.choice(["A", "B", "C", "D"])
+    raides.append(letter)
+    if letter == "A":
+        countA += 1
+    elif letter == "B":
+        countB += 1
+    elif letter == "C":
+        countC += 1
+    elif letter == "D":
+        countD += 1
+
+originalus = raides.copy()
+print("Originalus:", originalus)
+
+raides.sort()
+
+print("Raidziu sarasas ABC", (raides), end = " ")
+print( )
+print("A skaicius -", countA)
+print("B skaicius -", countB)
+print("C skaicius -", countC)
+print("D skaicius -", countD)
+
+
+
+
+print()
+
+print()
+print("____UZD 5---")
+# Sugeneruokite 3 masyvus pagal 3 uždavinio sąlygą. Sudėkite masyvus, sudėdami atitinkamas reikšmes.
+# (turi gautis masyvas, kurio elementai, kaip pvz atrodo taip: “AAB”, “CBC”, “DDA”, 200 reikšmių).
+# Paskaičiuokite kiek skirtingų reikšmių kombinacijų gavote.
+
+
+
+
+
 
 
 print("---------------------")
