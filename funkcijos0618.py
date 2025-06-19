@@ -239,5 +239,23 @@ print()
 print("---------UZD 13-----------")
 # Sukurkite funkciją, kuri priimtų masyvą ir atspausdintų tik tuos elementus kurie yra skaičiai.
 
+# print(isinstance(5, int))
+# print(isinstance("5", int))
+# print(isinstance("5", str))
+# print(isinstance([2,3,4,3.14,"laba"], str))
+# print(isinstance([2,3,4,3.14,"laba"], list))
 
 
+def masivas(skaiciukai):
+    for x in skaiciukai:
+        if isinstance(x, int) or isinstance(x, float):
+            print(x)
+
+duomenys = ["labas", 7, 3.14, "zalgiris", "rytas", 100]
+masivas(duomenys)
+
+print()
+print("---------UZD 14-----------")
+# Sukurkite funkciją, kuri priima masyvą ir atspausdina tik sveikuosius skaičius.
+# (jei pavyks, patobulinkite, kad funkcija priimtų antrą parametrą True/False kuris nuspręstų ar spausdins
+# tik sveikuosius skaičius ar skaičius su kableliu.
