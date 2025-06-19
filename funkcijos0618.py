@@ -142,9 +142,63 @@ print("---------UZD 6-----------")
 # Sukurkite Funkciją kuri sugeneruotų random skaičių masyvą ir jį gražintų.
 # Funkcija priima tris kintamuosius, min, max ir length reikšmėms nustatyti.
 
-def (min,max,length):
 
-    nam = random.randint(min,max)
-    return nam
+import random
+def skaiciai(min,max,length):
+    nums = []
+    for sk in range(length):
+        nam = random.randint(min,max)
+        nums.append(nam)
+    return nums
+
+print(skaiciai(1,10, 5))
+
+print()
+print("---------UZD 7-----------")
+
+# Sukurkite Funkciją kuri panaudotų 6toje užduotyje sugeneruotą masyvą (priimtų kaip kintamąjį),
+# susumuotų ir gražintų reikšmę.
+
+
+masyvas = skaiciai(1,10,5)
+
+def suma(masyvas):
+    return sum(masyvas)
+
+print(masyvas)
+print(suma(masyvas))
+
+print()
+print("---------UZD 8-----------")
+# Sukurkite Funkciją kuri priimtų 6toje užduotyje sugeneruotą masyvą ir gražintų jos skaičių vidurkį.
+
+masyvas = skaiciai(1,10,5)
+
+def vid(masyvas):
+    return sum(masyvas) / len(masyvas)
+
+print(masyvas)
+print(vid(masyvas))
+
+print()
+print("---------UZD 9-----------")
+# Sukurkite Funkciją kuri priimtų du skaičius ir atspausdintų stačiakampį užpildytą žvaigždutėmis.
+# Pirmas skaičius- išoriniam ciklui, antras vidiniam.
+
+def square(aukstis, plotis):
+    for x in range(aukstis):
+        for y in range(plotis):
+            print("*", end=" ")
+        print()
+
+square(3,8)
+
+print()
+print("---------UZD 10-----------")
+
+# Sukurkite Funkciją kuri priimtų sakinį kaip kintamąjį ir atspausdintų kiek jame yra raidžių(simbolių) ir tarpų.
+# Sakinys - “Šiandien labai graži diena”. (kodas turi veikti padavus bet kokį sakinį) (simboliu yra 23, tarpu yra 3)
+
+
 
 
