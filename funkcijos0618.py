@@ -199,6 +199,45 @@ print("---------UZD 10-----------")
 # Sukurkite Funkciją kuri priimtų sakinį kaip kintamąjį ir atspausdintų kiek jame yra raidžių(simbolių) ir tarpų.
 # Sakinys - “Šiandien labai graži diena”. (kodas turi veikti padavus bet kokį sakinį) (simboliu yra 23, tarpu yra 3)
 
+def sakinys_info(sakinys):
+    print(sakinys)
+    print("Is viso simboliu -",len(sakinys))
+    print("Tarpu kiekis -", sakinys.count(" "))
+    print("Skirtumas -", len(sakinys) - sakinys.count(" "))
+
+sakinys_info('Šiandien labai graži diena')
+
+print()
+print("---------UZD 11-----------")
+
+# Sukurkite Funkciją kuri priimtų sakinį, jį užkoduotų ir grąžintų. Kodavimas - sakinį apsukame iš kitos pusės.
+# Pvz “Naglis” turi gautis “silgaN”.
+
+def tekstas(sakinys):
+    # print(sakinys)
+    # print(sakinys[::-1])
+    return sakinys[::-1]
+
+print(tekstas("Ernest"))
+
+print()
+print("---------UZD 12-----------")
+
+# Sukurti funkciją, kuri apsuka tik žodžius. “Labas rytas” -> “sabal satyr” ir atspausdina rezultatą
+
+
+def sveikinimas(sakinys):
+    print(sakinys.split())
+    naujas_tekstas = []
+    for zodis in sakinys.split():
+        naujas_tekstas.append(zodis[::-1])
+    print(" ".join(naujas_tekstas))
+
+sveikinimas("Labas rytas")
+
+print()
+print("---------UZD 13-----------")
+# Sukurkite funkciją, kuri priimtų masyvą ir atspausdintų tik tuos elementus kurie yra skaičiai.
 
 
 
